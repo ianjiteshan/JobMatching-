@@ -20,7 +20,7 @@ from src.models.user import db
 def load_job_seekers():
     """Load job seekers from CSV file"""
     try:
-        df = pd.read_csv('/home/ubuntu/job_matching_api/suryamitra_job_seekers.csv')
+        df = pd.read_csv('suryamitra_job_seekers.csv')
         
         loaded_count = 0
         

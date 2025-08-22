@@ -12,7 +12,7 @@ import os
 print("Starting ML model retraining with comprehensive dataset...")
 
 # Database connection
-db_path = '/home/ubuntu/job_matching_api/src/database/app.db'
+db_path = './src/database/app.db'
 conn = sqlite3.connect(db_path)
 
 # Load job seekers data

@@ -7,7 +7,7 @@ print("=== Suryamitra Job Matching System Verification ===\n")
 
 # Test 1: Database Connection and Data Verification
 print("1. Testing Database Connection...")
-db_path = '../src/database/app.db'
+db_path = './src/database/app.db'
 try:
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()

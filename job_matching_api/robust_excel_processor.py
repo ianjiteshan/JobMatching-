@@ -3,11 +3,11 @@ import pandas as pd
 import os
 
 excel_files = [
-    '/home/ubuntu/upload/Suryamitra2018-2019.xlsx',
-    '/home/ubuntu/upload/Suryamitra2019-2020.xlsx',
-    '/home/ubuntu/upload/Suryamitra2020-2021.xlsx',
-    '/home/ubuntu/upload/Suryamitra2021-2022.xlsx',
-    '/home/ubuntu/upload/Suryamitra2022-2023.xlsx'
+    'Suryamitra2018-2019.xlsx',
+    'Suryamitra2019-2020.xlsx',
+    'Suryamitra2020-2021.xlsx',
+    'Suryamitra2021-2022.xlsx',
+    'Suryamitra2022-2023.xlsx'
 ]
 
 # Define a mapping for common column names to a standardized format
@@ -79,7 +79,7 @@ for file_path in excel_files:
     except Exception as e:
         print(f"Error processing {file_path}: {e}")
 
-output_csv_path = '/home/ubuntu/job_matching_api/suryamitra_consolidated_2018_2023.csv'
+output_csv_path = 'suryamitra_consolidated_2018_2023.csv'
 all_consolidated_data.to_csv(output_csv_path, index=False)
 print(f"Consolidated and cleaned data saved to {output_csv_path}")
 

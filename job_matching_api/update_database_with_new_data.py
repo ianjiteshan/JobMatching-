@@ -4,13 +4,13 @@ from datetime import datetime
 import os
 
 # Read the consolidated data
-csv_file_path = '/home/ubuntu/job_matching_api/suryamitra_final_cleaned_2018_2023.csv'
+csv_file_path = 'suryamitra_final_cleaned_2018_2023.csv'
 df = pd.read_csv(csv_file_path)
 
 print(f"Loading {len(df)} records from consolidated data...")
 
 # Database connection - use the correct path
-db_path = '/home/ubuntu/job_matching_api/src/database/app.db'
+db_path = './src/database/app.db'
 conn = sqlite3.connect(db_path)
 cursor = conn.cursor()
 

@@ -77,11 +77,11 @@ def process_2021_2023_data(file_path):
 
 
 excel_files = {
-    '/home/ubuntu/upload/Suryamitra2018-2019.xlsx': process_2018_2019_data,
-    '/home/ubuntu/upload/Suryamitra2019-2020.xlsx': process_2018_2019_data,
-    '/home/ubuntu/upload/Suryamitra2020-2021.xlsx': process_2020_2021_data,
-    '/home/ubuntu/upload/Suryamitra2021-2022.xlsx': process_2021_2023_data,
-    '/home/ubuntu/upload/Suryamitra2022-2023.xlsx': process_2021_2023_data
+    'Suryamitra2018-2019.xlsx': process_2018_2019_data,
+    'Suryamitra2019-2020.xlsx': process_2018_2019_data,
+    'Suryamitra2020-2021.xlsx': process_2020_2021_data,
+    'Suryamitra2021-2022.xlsx': process_2021_2023_data,
+    'Suryamitra2022-2023.xlsx': process_2021_2023_data
 }
 
 all_consolidated_data = pd.DataFrame()
@@ -94,7 +94,7 @@ for file_path, process_func in excel_files.items():
     except Exception as e:
         print(f"Error processing {file_path}: {e}")
 
-output_csv_path = '/home/ubuntu/job_matching_api/suryamitra_consolidated_2018_2023.csv'
+output_csv_path = 'suryamitra_consolidated_2018_2023.csv'
 all_consolidated_data.to_csv(output_csv_path, index=False)
 print(f"Consolidated and cleaned data saved to {output_csv_path}")
 
@@ -127,7 +127,7 @@ if 'Name' in all_consolidated_data.columns:
     all_consolidated_data.dropna(subset=['Name'], inplace=True)
 
 # Save the final cleaned data
-final_output_csv_path = '/home/ubuntu/job_matching_api/suryamitra_final_cleaned_2018_2023.csv'
+final_output_csv_path = 'suryamitra_final_cleaned_2018_2023.csv'
 all_consolidated_data.to_csv(final_output_csv_path, index=False)
 print(f"Final cleaned data saved to {final_output_csv_path}")
 
