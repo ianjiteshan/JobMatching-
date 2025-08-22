@@ -107,9 +107,9 @@ def main():
     
     # PDF file paths
     pdf_files = [
-        ('/home/ubuntu/upload/Suryamitra2020-21.pdf', '2020-21'),
-        ('/home/ubuntu/upload/SuryamitraData2021-22.pdf', '2021-22'),
-        ('/home/ubuntu/upload/SuryamitraData2022-23.pdf', '2022-23')
+        ('Suryamitra2020-21.pdf', '2020-21'),
+        ('SuryamitraData2021-22.pdf', '2021-22'),
+        ('SuryamitraData2022-23.pdf', '2022-23')
     ]
     
     all_candidates = []
@@ -189,7 +189,7 @@ def main():
     
     # Save clean dataset
     clean_df = pd.DataFrame(clean_data)
-    clean_csv_path = '/home/ubuntu/job_matching_api/suryamitra_clean_data.csv'
+    clean_csv_path = 'suryamitra_clean_data.csv'
     clean_df.to_csv(clean_csv_path, index=False)
     print(f"\nClean dataset saved to {clean_csv_path}")
     print(f"Clean records: {len(clean_df)}")

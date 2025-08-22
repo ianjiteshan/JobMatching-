@@ -2,11 +2,11 @@
 import pandas as pd
 
 excel_files = [
-    '/home/ubuntu/upload/Suryamitra2018-2019.xlsx',
-    '/home/ubuntu/upload/Suryamitra2019-2020.xlsx',
-    '/home/ubuntu/upload/Suryamitra2020-2021.xlsx',
-    '/home/ubuntu/upload/Suryamitra2021-2022.xlsx',
-    '/home/ubuntu/upload/Suryamitra2022-2023.xlsx'
+    'Suryamitra2018-2019.xlsx',
+    'Suryamitra2019-2020.xlsx',
+    'Suryamitra2020-2021.xlsx',
+    'Suryamitra2021-2022.xlsx',
+    'Suryamitra2022-2023.xlsx'
 ]
 
 for file in excel_files:

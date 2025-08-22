@@ -3,7 +3,7 @@ import pandas as pd
 import os
 
 excel_files_info = {
-    '/home/ubuntu/upload/Suryamitra2018-2019.xlsx': {
+    'Suryamitra2018-2019.xlsx': {
         'header_row': 3,  # 0-indexed, row 4 in Excel
         'data_start_row': 4, # 0-indexed, data starts from row 5
         'columns': {
@@ -14,7 +14,7 @@ excel_files_info = {
         },
         'relevant_columns': ['Training_Partner', 'Batch_Detail', 'Placement_Count', 'Payment_Record']
     },
-    '/home/ubuntu/upload/Suryamitra2019-2020.xlsx': {
+    'Suryamitra2019-2020.xlsx': {
         'header_row': 3,  # 0-indexed, row 4 in Excel
         'data_start_row': 4, # 0-indexed, data starts from row 5
         'columns': {
@@ -25,7 +25,7 @@ excel_files_info = {
         },
         'relevant_columns': ['Training_Partner', 'Batch_Detail', 'Placement_Count', 'Payment_Record']
     },
-    '/home/ubuntu/upload/Suryamitra2020-2021.xlsx': {
+    'Suryamitra2020-2021.xlsx': {
         'header_row': 1,  # 0-indexed, row 2 in Excel
         'data_start_row': 2, # 0-indexed, data starts from row 3
         'columns': {
@@ -52,7 +52,7 @@ excel_files_info = {
             'Training_Start_Date', 'Training_End_Date', 'Result', 'Placement_Status'
         ]
     },
-    '/home/ubuntu/upload/Suryamitra2021-2022.xlsx': {
+    'Suryamitra2021-2022.xlsx': {
         'header_row': 1,  # 0-indexed, row 2 in Excel
         'data_start_row': 2, # 0-indexed, data starts from row 3
         'columns': {
@@ -81,7 +81,7 @@ excel_files_info = {
             'Diploma_Marks', 'Training_Start_Date', 'Training_End_Date', 'Result', 'Placement_Status'
         ]
     },
-    '/home/ubuntu/upload/Suryamitra2022-2023.xlsx': {
+    'Suryamitra2022-2023.xlsx': {
         'header_row': 1,  # 0-indexed, row 2 in Excel
         'data_start_row': 2, # 0-indexed, data starts from row 3
         'columns': {
@@ -134,7 +134,7 @@ for file_path, info in excel_files_info.items():
     except Exception as e:
         print(f"Error processing {file_path}: {e}")
 
-output_csv_path = '/home/ubuntu/job_matching_api/suryamitra_consolidated_2018_2023.csv'
+output_csv_path = 'suryamitra_consolidated_2018_2023.csv'
 all_consolidated_data.to_csv(output_csv_path, index=False)
 print(f"Consolidated and cleaned data saved to {output_csv_path}")
 

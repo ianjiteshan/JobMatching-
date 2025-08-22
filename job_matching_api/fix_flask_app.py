@@ -1,6 +1,6 @@
 import os
 import sys
-sys.path.append('/home/ubuntu/job_matching_api/src')
+sys.path.append('./src')
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy

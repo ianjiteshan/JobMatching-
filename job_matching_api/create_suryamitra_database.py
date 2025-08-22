@@ -230,8 +230,8 @@ def main():
     job_postings_df = pd.DataFrame(job_postings)
     
     # Save to CSV files
-    job_seekers_df.to_csv('/home/ubuntu/job_matching_api/suryamitra_job_seekers.csv', index=False)
-    job_postings_df.to_csv('/home/ubuntu/job_matching_api/sample_job_postings.csv', index=False)
+    job_seekers_df.to_csv('suryamitra_job_seekers.csv', index=False)
+    job_postings_df.to_csv('sample_job_postings.csv', index=False)
     
     print(f"Created {len(job_seekers)} job seeker records")
     print(f"Created {len(job_postings)} job posting records")
